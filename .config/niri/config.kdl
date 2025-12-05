@@ -223,6 +223,11 @@ binds {
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    // === Webapps ===
+    Mod+A hotkey-overlay-title="Open DuckAI" {
+        spawn "launch-webapp.sh" "https://duck.ai"
+    }
+
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Mod+Space hotkey-overlay-title="Application Launcher" {
