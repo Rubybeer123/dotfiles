@@ -192,7 +192,6 @@ window-rule {
     match app-id=r#"^galculator$"#
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
-    match app-id=r#"^steam$"#
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
 }
@@ -233,6 +232,15 @@ binds {
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Mod+H hotkey-overlay-title="Open or Focus Heroic Games Launcher" {
+        spawn "niri-spawn-or-focus.sh" "heroic"
+    }
+    Mod+L hotkey-overlay-title="Open or Focus Lutris" {
+        spawn "niri-spawn-or-focus.sh" "lutris"
+    }
+    Mod+S hotkey-overlay-title="Open or Focus Steam" {
+        spawn "niri-spawn-or-focus.sh" "steam"
+    }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
@@ -304,10 +312,10 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
+    // Mod+H     { focus-column-left; } // We don't need these as we have the arrow keys.
+    // Mod+J     { focus-window-down; }
+    // Mod+K     { focus-window-up; }
+    // Mod+L     { focus-column-right; }
 
     // === Window Movement ===
     Mod+Shift+Left  { move-column-left; }
