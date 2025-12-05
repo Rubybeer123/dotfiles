@@ -227,6 +227,9 @@ binds {
     Mod+A hotkey-overlay-title="Open DuckAI" {
         spawn "launch-webapp.sh" "https://duck.ai"
     }
+    Mod+Ctrl+A hotkey-overlay-title="Open GitHub" {
+        spawn "launch-webapp.sh" "https://github.com"
+    }
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
