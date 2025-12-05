@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Credit to @hypnomarten on Reddit for this. Thank you <3
 
 APP=$1
 
