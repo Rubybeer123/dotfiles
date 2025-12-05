@@ -231,6 +231,9 @@ binds {
     Mod+G hotkey-overlay-title="Open or Focus Discord" {
         spawn "niri-spawn-or-focus.sh" "discord"
     }
+    Mod+Shift+G hotkey-overlay-title="Open or Focus Signal" {
+        spawn "niri-spawn-or-focus.sh" "signal-desktop"
+    }
     Mod+B hotkey-overlay-title="Open Browser" {
         spawn "firefox"
     }
