@@ -247,6 +247,9 @@ binds {
     Mod+G hotkey-overlay-title="Open or Focus Discord" {
         spawn "niri-spawn-or-focus.sh" "discord"
     }
+    Mod+Backslash hotkey-overlay-title="Open File Manager" {
+        spawn "nautilus"
+    }
     Mod+Shift+G hotkey-overlay-title="Open or Focus Signal" {
         spawn "niri-spawn-or-focus.sh" "signal-desktop"
     }
