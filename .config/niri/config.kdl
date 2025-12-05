@@ -7,8 +7,6 @@ config-notification {
 }
 // Outputs from existing configuration
 
-spawn-at-startup "niriusd"
-
 output "DP-1" {
     mode "1920x1080@59.950" // Set resolution and refresh rate
     position x=-1920 y=0
@@ -119,6 +117,7 @@ overview {
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-at-startup "dms" "run"
 spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
+spawn-at-startup "niriusd"
 environment {
   XDG_CURRENT_DESKTOP "niri"
   QT_QPA_PLATFORM "wayland"
